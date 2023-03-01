@@ -1,10 +1,21 @@
 import './index.css'
 
 const InputText = (props) => {
+
+   
+   const Digitado = (evento) => {
+      props.Alterado(evento.target.value)
+   }
+
    return (
      <div className="campo-texto">
         <label>{props.label}</label>
-        <input required={props.obrigatorio} placeholder={props.placeholder}/>
+        <input
+            value={props.valor}
+            onChange={Digitado} 
+            required={props.obrigatorio} 
+            placeholder={props.placeholder}
+        />
      </div>
    )
 }
