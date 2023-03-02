@@ -6,15 +6,6 @@ import Button from "../Button";
 
 const Form = (props) => {
 
-  const categorias = [
-    'Programação',
-    'Front-End',
-    'Back-End',
-    'Data Science',
-    'Mobile',
-    'Gestão'
-  ]
-
   const [titulo, setTitulo] = useState('')
   const [autor, setAutor] = useState('')
   const [capa, setCapa] = useState('')
@@ -57,7 +48,7 @@ const Form = (props) => {
         <Dropdown 
             obrigatorio={true} 
             label='Categoria' 
-            itens={categorias}
+            itens={props.categorias}
             valor={categoria}
             Alterado={valor => setCategoria(valor)}
         />
