@@ -19,6 +19,10 @@ const Form = (props) => {
       capa,
       categoria
      })
+     setTitulo("")
+     setAutor("")
+     setCapa("")
+     setCategoria("")
   }
 
   return (

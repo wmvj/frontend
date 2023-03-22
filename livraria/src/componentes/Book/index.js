@@ -3,7 +3,7 @@ import './index.css'
 const Book = (props) => {
     return(
         <div className='livro'>
-            <div className='cabecalho'>
+            <div className='cabecalho' style={{backgroundColor: props.cordeFundo}}>
                 <img src={props.capa} alt={props.autor}/>
             </div>
             <div className='rodape'>

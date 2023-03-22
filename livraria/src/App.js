@@ -2,6 +2,7 @@ import { useState } from "react";
 import Banner from "./componentes/Banner";
 import Category from "./componentes/Category";
 import Form from "./componentes/Form";
+import { GlobalStyle } from "./componentes/GlobalStyle";
 
 function App() {
   const categorias = [
@@ -50,7 +51,9 @@ function App() {
   };
 
   return (
+
     <div className="App">
+      <GlobalStyle/>
       <Banner />
       <Form
         categorias={categorias.map((categoria) => categoria.nome)}
