@@ -1,9 +1,12 @@
 import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import { Context } from '../contexts/Context';
 
 export const ShowData = () => {
+    const {name, age} = useContext(Context)
     return (
         <div>
-            Tela ShowData
+            Tela ShowData de {name} 
             <br/>
             <Link to="/">Voltar para SignUp</Link>
         </div>
